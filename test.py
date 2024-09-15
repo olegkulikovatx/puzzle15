@@ -24,6 +24,7 @@ from tensorflow.keras.optimizers import Adam
 from Puzzle15.Puzzle15 import Enviroment15
 from Puzzle15.Puzzle15 import Agent
 
+
 enviroment = Enviroment15()
 optimizer = Adam(learning_rate=0.001)
 agent = Agent(enviroment, optimizer)
@@ -33,4 +34,5 @@ test(agent, enviroment, 1, 10, improve_limit=128)
 
 agent.load_models('15_latest.keras')
 
-test(agent, enviroment, 20, 15, improve_limit=128)
+test(agent, enviroment, 100, 15, improve_limit=128)
+#test(agent, enviroment, 1, 15, improve_limit=128, show=True)

@@ -541,7 +541,7 @@ def train(agent, num_of_episodes, timesteps_per_episode, epsilon, nmoves,
                 if total_steps % 16 == 0:
                     agent.retrain(batch_size, debug)
                     num_trained += 1
-            if total_steps %256 == 1:
+            if total_steps % 2048 == 1:
                 agent.align_target_model(debug)  
                 num_aligned += 1
 
