@@ -34,5 +34,5 @@ test(agent, enviroment, 1, 10, improve_limit=128)
 
 agent.load_models('15_latest.keras')
 
-test(agent, enviroment, 100, 15, improve_limit=128)
+test(agent, enviroment, 100, 20, improve_limit=128)
 #test(agent, enviroment, 1, 15, improve_limit=128, show=True)

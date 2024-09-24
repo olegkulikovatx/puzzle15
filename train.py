@@ -16,7 +16,7 @@ agent = Agent(enviroment, optimizer)
 
 from Puzzle15.Puzzle15 import train
 
-nmoves=31
+nmoves=35
 
 #agent.load_models('15_latest.keras')
 
@@ -26,9 +26,9 @@ improve_limit = 64
 
 min_epsilon = 0.1
 max_epsilon = 0.9
-decay = 0.0009
+decay = 0.0002
 epsilon = max_epsilon
-num_of_episodes = 5000 
+num_of_episodes = 50000 
 timesteps_per_episode = 1000
 batch_size = 32
 
